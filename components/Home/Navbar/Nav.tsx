@@ -28,7 +28,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <div className={`fixed ${navBg? 'bg-[#1A8DCA]' : 'bg-fixed'} w-full transition-all duration-200 h-[12vh] z-[1000] bg-[#1A8DCA]`}>
+    <div className={`fixed ${navBg? 'bg-[#1A8DCA]' : 'bg-fixed'} w-full transition-all duration-200 h-[12vh] z-[1000] bg-[#0F3D5E]`}>
       <div className='flex items-center h-full justify-between w-[90%] xl:w-[90%] mx-auto'>
         {/* Logo */}
         <Image src="/images/logo1.png" alt="Successway Digital Logo" width={90} height={60} />
