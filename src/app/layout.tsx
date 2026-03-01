@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import ResponsiveNav from "../../components/Home/Navbar/ResponsiveNav";
 
 const fonts = Space_Grotesk({
   weight: ['300','400','500','600','700'],
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body
         className={fonts.className}
       >
+        <ResponsiveNav/>
         {children}
       </body>
     </html>
