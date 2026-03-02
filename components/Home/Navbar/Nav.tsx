@@ -4,7 +4,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { navLinks } from '../../../constant/constant'
-import { HiBars3BottomRight } from 'react-icons/hi2'
+import { HiBars3BottomRight } from 'react-icons/hi2'  
+
+// define prop types for nave
 
 const Nav = () => {
 
