@@ -6,9 +6,12 @@ import React, { useEffect, useState } from 'react'
 import { navLinks } from '../../../constant/constant'
 import { HiBars3BottomRight } from 'react-icons/hi2'  
 
-// define prop types for nave
+// define prop types for navbar
+type Props ={
+  openNav: () => void;
+}
 
-const Nav = () => {
+const Nav = ({ openNav }: Props) => {
 
   const [navBg, setNavBg] = useState(false)
 
@@ -30,7 +33,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <div className={`fixed ${navBg? 'bg-[#1A8DCA]' : 'bg-fixed'} w-full transition-all duration-200 h-[12vh] z-[1000] bg-[#0F3D5E]`}>
+    <div className={`fixed ${navBg? 'bg-[#1A8DCA]' : 'bg-fixed'} w-full transition-all duration-200 h-[12vh] z-1000`}>
       <div className='flex items-center h-full justify-between w-[90%] xl:w-[90%] mx-auto'>
         {/* Logo */}
         <Image src="/images/logo1.png" alt="Successway Digital Logo" width={90} height={60} />
@@ -48,7 +51,7 @@ const Nav = () => {
             Sign Up
           </button>
           {/* Burger Menu */}
-          <HiBars3BottomRight className='w-8 h-8 cursor-pointer text-white lg:hidden'/>
+          <HiBars3BottomRight onClick={openNav} className='w-8 h-8 cursor-pointer text-white lg:hidden'/>
         </div>
     </div>
     </div>
