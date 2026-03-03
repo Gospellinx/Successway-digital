@@ -28,14 +28,21 @@ const About = () => {
                 <h1 className='text-7xl lg:text-9xl font-bold text-black opacity-10'>01</h1>
                 <div className='-mt-10'>
                     <h1 className='text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mb-3'>Visit our head office and select your desired course.</h1>
-                    <p className='width-[100%] lg:w-[70%] text-base text-black opacity-70'>Take the first step toward transforming your future by visiting our head office. Our friendly team will guide you through the available digital and vocational programs, helping you choose the course that best aligns with your interests, strengths, and career goals.</p>
+                    <p className='width-[100%] lg:w-[70%] text-base text-black opacity-70'>Take the first step toward transforming your future by visiting our head office...</p>
                 </div>
             </div>
             <div className='mt-8 w-full'>
                 <h1 className='text-7xl lg:text-9xl font-bold text-black opacity-10'>02</h1>
                 <div className='-mt-10'>
                     <h1 className='text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mb-3'>Fill in All the Necessary Documents</h1>
-                    <p className='width-[100%] lg:w-[70%] text-base text-black opacity-70'>Once you’ve selected your preferred program, you will complete a simple registration process. Our staff will assist you with the required documentation and provide all the information you need about class schedules, learning materials, and expectations. We believe in making the enrollment process smooth, transparent, and accessible to everyone..</p>
+                    <p className='width-[100%] lg:w-[70%] text-base text-black opacity-70'>Once you’ve selected your preferred program, you will complete a simple registration process. Our staff will assist you with the required documentation and provide all the information you need about class schedules, learning materials, and expectations..</p>
+                </div>
+            </div>
+            <div className='mt-8 w-full'>
+                <h1 className='text-7xl lg:text-9xl font-bold text-black opacity-10'>03</h1>
+                <div className='-mt-10'>
+                    <h1 className='text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mb-3'>Start Learning</h1>
+                    <p className='width-[100%] lg:w-[70%] text-base text-black opacity-70'>After registration, your journey officially begins. You’ll gain access to hands-on training, professional mentorship, and practical learning experiences designed to equip you with real-world skills.</p>
                 </div>
             </div>
         </div>
