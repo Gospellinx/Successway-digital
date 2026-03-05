@@ -1,4 +1,8 @@
+"use client";
+
+import Image from 'next/image';
 import React from 'react'
+import Tilt from 'react-parallax-tilt';
 
 // define the type
 type Props = {
@@ -15,11 +19,15 @@ type Props = {
   };
 };
 
-const CourseCard = () => {
+const CourseCard = ({course}:Props) => {
   return (
-    <div className=''>
-      
-    </div>
+    <Tilt>
+        <div className='bg-white rounded-lg cursor-pointer overflow-hidden'>
+            <div>
+                <Image src={course.image} alt={course.title} width={400} height={400} className='w-[400px] h-[400px]'/>
+            </div>
+        </div>
+    </Tilt>
   )
 }
 
