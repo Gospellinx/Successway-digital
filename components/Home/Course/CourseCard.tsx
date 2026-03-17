@@ -24,7 +24,7 @@ const CourseCard = ({course}:Props) => {
     <Tilt>
         <div className='bg-white rounded-lg cursor-pointer overflow-hidden'>
             <div>
-                <Image src={course.image} alt={course.title} width={400} height={400} className='w-[400px] h-[400px]'/>
+                <Image src={course.image} alt={course.title} width={400} height={400} className='w-full aspect-video object-cover rounded-lg'/>
             </div>
         </div>
     </Tilt>

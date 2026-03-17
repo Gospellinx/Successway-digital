@@ -12,7 +12,7 @@ const Courses = () => {
         {/* Title */}
         <h1 className='text-4xl md:text-5xl font-bold text-black'>Our Programs / Services </h1>
         {/* Courses */}
-        <div className='md:mt-16 mt-10 gird grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10'>
+        <div className='md:mt-16 mt-10 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10'>
           {/* Individual courses */}
           {coursesData.map((course)=> {
             return (<div key={course.id}>
