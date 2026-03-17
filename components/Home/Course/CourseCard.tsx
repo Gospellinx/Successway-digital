@@ -26,13 +26,16 @@ const CourseCard = ({course}:Props) => {
             <div>
                 <Image src={course.image} alt={course.title} width={400} height={400} className='w-full aspect-video object-cover rounded-lg'/>
             </div>
-            {/* Prices tag */}
             <div className="p-4">
+            {/* Prices tag */}
               <h1 className='ml-auto relative z-10 h-20 w-20 flex items-center text-lg font-bold justify-center flex-col -mt-16 rounded-full bg-rose-700 text-white'>₦{course.price.toLocaleString()}</h1>
+              {/* information */}
+            <div className="flex items-center mt-6 space-x-4">
+              <span className='text-lg text-black text-opacity-70 font-bold'>{course.category}</span>
+              <span className='text-base text-gray-600'>{course.author}</span>
             </div>
-            {/* information */}
-            <div className="flex items-center mt-6 space-x-4"></div>
-        </div>
+            </div>
+            </div>
     </Tilt>
   )
 }
