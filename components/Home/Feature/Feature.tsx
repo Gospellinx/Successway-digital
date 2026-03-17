@@ -11,8 +11,8 @@ const Feature = () => {
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 items-center gap-12 w-[90%] mx-auto">
         {/* Image */}
         <Tilt>
-          <div>
-            <Image src="/images/f.png" alt="image" width={1000} height={1000} />
+          <div className="flex justify-center">
+            <Image src="/images/f.png" alt="image" width={1000} height={1000} className="max-w-full ml-[-100px] h-auto" />
           </div>
         </Tilt>
         <div>
