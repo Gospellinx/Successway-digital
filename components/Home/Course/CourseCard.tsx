@@ -26,6 +26,10 @@ const CourseCard = ({course}:Props) => {
             <div>
                 <Image src={course.image} alt={course.title} width={400} height={400} className='w-full aspect-video object-cover rounded-lg'/>
             </div>
+            {/* Prices tag */}
+            <div className="p-4">
+              <h1 className='ml-auto relative z-10 h-20 w-20 flex items-center text-lg font-bold justify-center flex-col mt-16 rounded-full bg-rose-700 text-white'>${course.price.toFixed(2)}</h1>
+            </div>
         </div>
     </Tilt>
   )
