@@ -9,7 +9,7 @@ const Review = () => {
             <div></div>
         </div>
         {/* Slider */}
-        <div className='xl:col-span-2'></div>
+        <div className='xl:col-span-2'></div> 
       </div>
     </div>
   )
