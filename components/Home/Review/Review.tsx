@@ -1,5 +1,6 @@
 import React from "react";
 import { BsQuote } from "react-icons/bs";
+import Slider from "../../Helper/Slider";
 
 const Review = () => {
   return (
@@ -32,7 +33,10 @@ const Review = () => {
           </div>
         </div>
         {/* Slider */}
-        <div className="xl:col-span-2"></div>
+        <div className="xl:col-span-2 bg-white rounded-lg overflow-hidden">
+          {/* Sliders Testimony */}
+          <Slider/>
+        </div>
       </div>
     </div>
   );
