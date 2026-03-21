@@ -47,7 +47,7 @@ const Footer = () => {
             <button className='px-6 py-2 mt-4 rounded-lg outline-none bg-rose-700 w-full text-white'>Subscribe</button>
         </div>
       </div>
-      
+      <p className='text-white text-base text-opacity-50 text-center mt-4'>©2026 Successway Digital & Vocational Guidance Foundation. All rights reserved.</p>
     </div>
   )
 }
