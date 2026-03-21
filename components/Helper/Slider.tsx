@@ -24,12 +24,15 @@ const responsive = {
 };
 
 const Slider = () => {
-  return <Carousel additionalTransfrom={0} arrows={true} autoPlaySpeed={5000} centerMode={false} containerClass="container-with-dots" dotListClass="" draggable={true} focusOnSelect={false} infinite={true} itemClass="item" keyBoardControl={true} minimumTouchDrag={80} renderButtonGroupOutside={false} renderDotsOutside={false} responsive={responsive} showDots={false} sliderClass="" slidesToSlide={1} swipeable={true}>
-    {/* Slider Card */}
-    <SliderCard image="/images/r1.jpg" name="Jessica John" role="Ex-Student"/>
-    <SliderCard image="/images/r2.jpg" name="Ibrahim Kau" role="Ex-Student"/>
-    <SliderCard image="/images/r3.jpg" name="Jerome Ali" role="Ex-Student"/>
-  </Carousel>>
+  return (
+    <Carousel additionalTransfrom={0} arrows={true} autoPlaySpeed={5000} centerMode={false} containerClass="container-with-dots" dotListClass="" draggable={true} focusOnSelect={false} infinite={true} itemClass="item" keyBoardControl={true} minimumTouchDrag={80} renderButtonGroupOutside={false} renderDotsOutside={false} responsive={responsive} showDots={false} sliderClass="" slidesToSlide={1} swipeable={true}>
+      {/* Slider Card */}
+      <SliderCard image="/images/r1.jpg" name="Jessica John" role="Ex-Student"/>
+      <SliderCard image="/images/r2.jpg" name="Ibrahim Kau" role="Ex-Student"/>
+      <SliderCard image="/images/r3.jpg" name="Jerome Ali" role="Ex-Student"/>
+    </Carousel>
+  );
+
 }
 
 export default Slider
