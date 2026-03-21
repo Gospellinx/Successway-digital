@@ -20,8 +20,34 @@ const Footer = () => {
                 <FaInstagram className='w-6 h-6 text-pink-500' />
             </div>
         </div>
+        {/* Column 2 of the footer */}
+        <div>
+            <h1 className='footer__heading'>Popular</h1>
+            <p className='footer__links'>Digital Literacy</p>
+            <p className='footer__links'>Vocational Skills</p>
+            <p className='footer__links'>Data Analytics & AI</p>
+            <p className='footer__links'>Web & App Design</p>
+            <p className='footer__links'>Project Management</p>
+            <p className='footer__links'>Financial Literacy</p>
+        </div>
+        {/* Column 3 of the footer */}
+        <div>
+            <h1 className='footer__heading'>Quick Links</h1>
+            <p className='footer__links'>Home</p>
+            <p className='footer__links'>About Us</p>
+            <p className='footer__links'>Services</p>
+            <p className='footer__links'>Contact</p>
+            <p className='footer__links'>Privacy Policy</p>
+            <p className='footer__links'>Terms of Service</p>
+        </div>
+        {/* Column 4 of the footer */}
+        <div>
+            <h1 className='footer__heading'>Subscribe for more Info</h1>
+            <input type="text" placeholder='Enter your email...' className='px-6 py-2 rounded-lg outline-none bg-gray-700 w-full text-white'/>
+            <button className='px-6 py-2 mt-4 rounded-lg outline-none bg-rose-700 w-full text-white'>Subscribe</button>
+        </div>
       </div>
-      <div></div>
+      
     </div>
   )
 }
