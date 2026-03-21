@@ -11,8 +11,8 @@ const Article = () => {
         {/* Card grid */}
         <div className='mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12'>
             {/* Ariticle mapping card */}
-            {articleData.map((article)=> {
-                return <div key={article.id} className='bg-white rounded-lg shadow-md overflow-hidden'>
+            {articleData.map((article,i)=> {
+                return <div data-aos="zoom-out" data-aos-anchor-placement="top-center" data-aos-delay={i * 150} key={article.id} className='bg-white rounded-lg shadow-md overflow-hidden'>
                     {/* REuseable cards */}
                     <ArticleCard article={article}/>
                 </div>
