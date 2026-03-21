@@ -1,5 +1,6 @@
 import React from 'react'
 import { articleData } from '../../../data/data'
+import ArticleCard from './ArticleCard'
 
 const Article = () => {
   return (
@@ -13,6 +14,7 @@ const Article = () => {
             {articleData.map((article)=> {
                 return <div key={article.id} className='bg-white rounded-lg shadow-md overflow-hidden'>
                     {/* REuseable cards */}
+                    <ArticleCard article={article}/>
                 </div>
             })}
         </div>
