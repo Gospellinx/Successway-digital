@@ -5,6 +5,7 @@ import { FaX } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
+    // Net this is the main container for the footer section, it has padding on the top and bottom, and a black background color.
     <div className='pt-20 pb-12 bg-black'>
         {/* DEfined grid system */}
       <div className='w-[90%] mx-auto grid items-start grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-8 border-b[1.5px] border-white border-opacity-20'>
