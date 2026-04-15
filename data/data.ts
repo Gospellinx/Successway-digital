@@ -73,7 +73,7 @@ export const articleData = [
     userImage: "/images/ceo.jpg",
     username: "Program Director",
     reaction: 65,
-    coverImage: "/images/outreach1.jpg",
+    coverImage: "/images/youth-empowerment.jpg",
     title: "Empowering Youth Through ICT and Vocational Skills",
   },
   {
@@ -81,7 +81,7 @@ export const articleData = [
     userImage: "/images/ceo.jpg",
     username: "Training Coordinator",
     reaction: 84,
-    coverImage: "/images/community-outreach.jpg",
+    coverImage: "/images/career-development.jpg",
     title: "School & Community Outreach Impact Report",
   },
   {
@@ -89,7 +89,7 @@ export const articleData = [
     userImage: "/images/ceo.jpg",
     username: "Guidance Counselor",
     reaction: 72,
-    coverImage: "/images/workshop.jpg",
+    coverImage: "/images/computer-literacy.jpg",
     title: "Guidance & Counselling Workshop for Career Growth",
   },
 ];
