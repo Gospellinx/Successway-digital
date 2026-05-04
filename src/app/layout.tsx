@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Space_Grotesk } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import ResponsiveNav from "../../components/Home/Navbar/ResponsiveNav";
 import Footer from "../../components/Home/Footer/Footer";
 import ScrollToTop from "../../components/Helper/ScrollToTop";
 
-const fonts = Space_Grotesk({
-  weight: ['300','400','500','600','700'],
-  subsets: ["latin"]
+const fonts = Plus_Jakarta_Sans({
+  weight: ['300','400','500','600','700', '800'],
+  subsets: ["latin"],
+  variable: '--font-plus-jakarta-sans',
 })
 
 export const metadata: Metadata = {
@@ -26,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={fonts.className}
+        className={`${fonts.variable} font-sans`}
       >
         <ResponsiveNav/>
         {children}
