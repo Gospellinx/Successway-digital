@@ -33,15 +33,15 @@ const Nav = ({ openNav }: Props) => {
   }, []);
 
   return (
-    <div className={`fixed ${navBg? 'bg-[#0f172a]/95 backdrop-blur-md border-b border-white/10' : 'bg-transparent'} w-full transition-all duration-300 h-[12vh] z-[1000]`}>
+    <div className={`fixed ${navBg? 'bg-[#1A8DCA]' : 'bg-fixed'} w-full transition-all duration-200 h-[12vh] z-1000`}>
       <div className='flex items-center h-full justify-between w-[90%] xl:w-[90%] mx-auto'>
         {/* Logo */}
-        <Image src="/images/logo1.png" alt="Successway Digital Logo" width={90} height={60} className="hover:opacity-90 transition-opacity" />
+        <Image src="/images/logo1.png" alt="Successway Digital Logo" width={90} height={60} />
         {/* Nav Links */}
         <div className="hidden lg:flex items-center space-x-10">
             {navLinks.map((link) => (
                 <Link key={link.id} href={link.url}>
-                    <p className="nav__links text-white/90 hover:text-white transition-colors">{link.label}</p>
+                    <p className="nav__links">{link.label}</p>
                 </Link>
             ))}
         </div>

@@ -16,17 +16,19 @@ type Props = {
 
 const ArticleCard = ({ article }: Props) => {
   return (
-    <div className="bg-white rounded-lg overflow-hidden">
+    <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300 shadow-xl group">
       {/* Images */}
-      <Image
-        src={`${article.coverImage}`}
-        alt={article.title}
-        width={300}
-        height={300}
-        className="w-full h-full"
-      />
+      <div className="overflow-hidden">
+        <Image
+          src={`${article.coverImage}`}
+          alt={article.title}
+          width={300}
+          height={300}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+      </div>
       {/* author and reaction */}
-      <div className="p-5">
+      <div className="p-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <Image
@@ -34,21 +36,23 @@ const ArticleCard = ({ article }: Props) => {
               alt={article.username}
               width={40}
               height={40}
-              className="rounded-full"
+              className="rounded-full ring-2 ring-[#BF8B31]/30"
             />
-            <p className="text-base text-black text-opacity-70">
+            <p className="text-sm font-semibold text-[#BF8B31] tracking-wide uppercase">
               {article.username}
             </p>
           </div>
           <div className="flex items-center space-x-2">
-            <BiHeart className="text-gray-600 text-lg" />
-            <p className="text-sm text-gray-800">{article.reaction}</p>
+            <BiHeart className="text-[#BF8B31] text-xl" />
+            <p className="text-sm font-medium text-white/80">{article.reaction}</p>
           </div>
         </div>
         {/* Heading */}
-        <h1 className="text-xl font-bold text-black mt-4 mb-4">{article.title}</h1>
-        <p className="text-base text-gray-700 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium a quae repellat ducimus consectetur possimus provident dolorum aut. Fugit dolorem illo, beatae dignissimos praesentium labore veritatis illum exercitationem? Eum, voluptatem!</p>
-        <button className="mt-4 mb-3 hover:text-green-600 text-lg text-black font-bold underline">Learn More</button>
+        <h1 className="text-xl font-bold text-white mt-5 mb-3">{article.title}</h1>
+        <p className="text-sm text-white/70 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium a quae repellat ducimus consectetur possimus provident dolorum aut. Fugit dolorem illo, beatae dignissimos praesentium labore veritatis illum exercitationem? Eum, voluptatem!</p>
+        <button className="mt-5 mb-2 hover:text-white text-[#BF8B31] font-bold tracking-wide flex items-center gap-2 transition-colors">
+          Learn More <span className="text-lg">→</span>
+        </button>
       </div>
     </div>
   );

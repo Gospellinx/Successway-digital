@@ -7,7 +7,7 @@ import Tilt from "react-parallax-tilt";
 
 const Feature = () => {
   return (
-    <div className="pt-16 pb-16">
+    <div className="pt-16 pb-16 bg-[#0f172a]">
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 items-center gap-12 w-[90%] mx-auto">
         {/* Image */}
         <Tilt>
@@ -17,20 +17,20 @@ const Feature = () => {
         </Tilt>
         <div>
           <div className="flex items-center space-x-4">
-            <div className="w-12 h-12 bg-rose-700 rounded-full flex items-center justify-center flex-col">
-              <FaAward className="w-6 h-6 text-white" />
+            <div className="w-12 h-12 bg-[#BF8B31]/10 border border-[#BF8B31]/20 rounded-full flex items-center justify-center flex-col">
+              <FaAward className="w-6 h-6 text-[#BF8B31]" />
             </div>
-            <h1 className="text-xl text-black font-semibold">
-              Guranteed and Certified
+            <h1 className="text-xl text-white/90 font-semibold tracking-wide">
+              Guaranteed and Certified
             </h1>
           </div>
           {/* Main heading */}
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold md:leading-[3rem] lg:leading-[3.5rem] xl:leading-[3.9rem] text-black mt-8">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold md:leading-[3rem] lg:leading-[3.5rem] xl:leading-[3.9rem] text-white mt-8">
             Why choose us?
           </h1>
           {/* Description */}
           <div>
-            <p className="text-gray-600 mt-2">
+            <p className="text-white/70 mt-2">
               We provide opportunities that help you grow, learn valuable
               digital skills, and achieve financial independence through
               accessible and practical education.
@@ -38,28 +38,28 @@ const Feature = () => {
             {/* Features list */}
             <div className="mt-6 space-y-4">
               <div className="flex items-start gap-3">
-                <span className="text-rose-700 mt-1">✔</span>
-                <p>Earn a digital degree for free</p>
+                <span className="text-[#BF8B31] mt-1">✔</span>
+                <p className="text-white/80">Earn a digital degree for free</p>
               </div>
 
               <div className="flex items-start gap-3">
-                <span className="text-rose-700 mt-1">✔</span>
-                <p>Boost your productivity and workplace skills</p>
+                <span className="text-[#BF8B31] mt-1">✔</span>
+                <p className="text-white/80">Boost your productivity and workplace skills</p>
               </div>
 
               <div className="flex items-start gap-3">
-                <span className="text-rose-700 mt-1">✔</span>
-                <p>Access free digital tools and equipment for learning</p>
+                <span className="text-[#BF8B31] mt-1">✔</span>
+                <p className="text-white/80">Access free digital tools and equipment for learning</p>
               </div>
 
               <div className="flex items-start gap-3">
-                <span className="text-rose-700 mt-1">✔</span>
-                <p>Become empowered and financially independent</p>
+                <span className="text-[#BF8B31] mt-1">✔</span>
+                <p className="text-white/80">Become empowered and financially independent</p>
               </div>
             </div>
 
             {/* Button */}
-            <button className="mt-8 bg-rose-700 text-white px-6 py-3 rounded-lg hover:bg-rose-800 transition">
+            <button className="mt-8 bg-[#BF8B31] text-white px-8 py-3 rounded-full hover:bg-[#a67828] transition-all font-semibold tracking-wide">
               Get Started
             </button>
           </div>

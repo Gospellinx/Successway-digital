@@ -24,7 +24,7 @@ type Props = {
 const CourseCard = ({ course }: Props) => {
   return (
     <Tilt>
-      <div className="bg-white rounded-lg cursor-pointer overflow-hidden">
+      <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl cursor-pointer overflow-hidden hover:border-white/20 transition-all duration-300 shadow-xl">
         <div>
           <Image
             src={course.image}
@@ -41,40 +41,40 @@ const CourseCard = ({ course }: Props) => {
           </h1> */}
           {/* information */}
           <div className="flex items-center mt-6 space-x-4">
-            <span className="text-lg text-black text-opacity-70 font-bold">
+            <span className="text-lg text-[#BF8B31] font-bold">
               {course.category}
             </span>
-            <span className="text-base text-gray-600">{course.author}</span>
+            <span className="text-base text-white/60">{course.author}</span>
           </div>
           {/* title */}
-          <h1 className="text-xl font-bold mt-2 xl:truncate">{course.title}</h1>
+          <h1 className="text-xl font-bold mt-2 text-white xl:truncate">{course.title}</h1>
           {/* reviews */}
           <div className="flex items-center mt-4 space-x-4">
             <div className="flex items-center">
-              <FaStar className="w-4 h-4 text-yellow-600" />
-              <FaStar className="w-4 h-4 text-yellow-600" />
-              <FaStar className="w-4 h-4 text-yellow-600" />
-              <FaStar className="w-4 h-4 text-yellow-600" />
-              <FaStar className="w-4 h-4 text-yellow-600" />
-              <FaStar className="w-4 h-4 text-yellow-600" />
+              <FaStar className="w-4 h-4 text-[#BF8B31]" />
+              <FaStar className="w-4 h-4 text-[#BF8B31]" />
+              <FaStar className="w-4 h-4 text-[#BF8B31]" />
+              <FaStar className="w-4 h-4 text-[#BF8B31]" />
+              <FaStar className="w-4 h-4 text-[#BF8B31]" />
+              <FaStar className="w-4 h-4 text-[#BF8B31]" />
             </div>
-            <span className="text-base text-orange-800 font-semibold">
+            <span className="text-base text-white/60 font-semibold">
               ({course.reviewNumber} Reviews)
             </span>
           </div>
           {/* line up */}
-          <div className="mt-6 mb-6 w-full h-[2px] bg-gray-500 opacity-15"></div>
+          <div className="mt-6 mb-6 w-full h-[1px] bg-white/10"></div>
           {/* lessons */}
           <div className="flex mb-8 items-center justify-between">
             <div className="flex items-center space-x-2">
-              <FaFile className="w-4 h-4 text-orange-600" />
-              <p className="text-base font-semibold text-gray-800">
+              <FaFile className="w-4 h-4 text-[#BF8B31]" />
+              <p className="text-base font-semibold text-white/80">
                 {course.lessons} Lessons
               </p>
             </div>
             <div className="flex items-center space-x-2">
-              <FaUserGroup className="w-4 h-4 text-orange-600" />
-              <p className="text-base font-semibold text-gray-800">
+              <FaUserGroup className="w-4 h-4 text-[#BF8B31]" />
+              <p className="text-base font-semibold text-white/80">
                 {course.students} Students
               </p>
             </div>

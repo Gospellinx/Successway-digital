@@ -16,12 +16,12 @@ const MobileNav = ({ showNav, closeNav }: props) => {
   return (
     <div>
       {/* Overlay */}
-      <div className={`fixed ${navOpen} top-0 transform transition-all duration-500 z-[10000] left-0 right-0 bottom-0 bg-black/80 backdrop-blur-sm w-full h-screen`} />
-      <div className={`text-white ${navOpen} fixed justify-center flex flex-col h-full transform transition-all duration-500 delay-300 w-[80%] sm:w-[60%] bg-[#0f172a] border-r border-white/10 shadow-2xl z-[10001]`}>
+      <div className={`fixed ${navOpen} top-0 transform transition-all duration-500 z-10000 left-0 right-0 bottom-0 bg-black opacity-70 w-full h-screen`} />
+      <div className={`text-white ${navOpen} fixed justify-center flex flex-col h-full transform transition-all duration-500 delay-300 w-[80%] sm:w-[60%] bg-[#69AA52] z-100006`}>
         {/* Nav-Linkx */}
         {navLinks.map((link)=> {
           return <Link key={link.id} href={link.url}>
-            <p className='nav__links text-[20px] ml-12 mb-6 border-b-[1px] pb-2 border-white/10 hover:border-white/40 transition-colors sm:text-[30px]'>{link.label}</p>
+            <p className='nav__links text-[20px] ml-12 top-[-9.7rem] border-b-[1.5px] pb-2 border-white sm:text-[30px]'>{link.label}</p>
           </Link>
         })}
         {/* Close Button */}
