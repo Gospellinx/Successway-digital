@@ -33,7 +33,7 @@ const Nav = ({ openNav }: Props) => {
   }, []);
 
   return (
-    <div className={`fixed ${navBg? 'bg-[#1A8DCA]' : 'bg-fixed'} w-full transition-all duration-200 h-[12vh] z-1000`}>
+    <div className={`fixed ${navBg? 'bg-[#0f172a]/95 backdrop-blur-md shadow-lg border-b border-white/10' : 'bg-transparent'} w-full transition-all duration-200 h-[12vh] z-[1000]`}>
       <div className='flex items-center h-full justify-between w-[90%] xl:w-[90%] mx-auto'>
         {/* Logo */}
         <Image src="/images/logo1.png" alt="Successway Digital Logo" width={90} height={60} />
@@ -47,7 +47,7 @@ const Nav = ({ openNav }: Props) => {
         </div>
         {/* Buttons */}
         <div className="flex items-center space-x-4">
-          <button className="md:px-10 md:py-2 px-8 py-1.5 text-white font-semibold text-base bg-[#E78633] hover:bg-[#d47a2a] transition-all duration-200 rounded-lg">
+          <button className="md:px-10 md:py-2 px-8 py-1.5 text-white font-semibold text-base bg-[#BF8B31] hover:bg-[#a67828] transition-all duration-200 rounded-lg shadow-lg">
             Sign Up
           </button>
           {/* Burger Menu */}
